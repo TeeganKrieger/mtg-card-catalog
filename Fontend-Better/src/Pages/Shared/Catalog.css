@@ -1,0 +1,7 @@
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 77vh;
+    max-height: 77vh;
+}

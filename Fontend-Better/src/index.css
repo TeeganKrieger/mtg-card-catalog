@@ -1,0 +1,139 @@
+:root {
+  font-size: 18px;
+  background-color: #12100e;
+}
+
+::-webkit-scrollbar {
+  z-index: 50;
+  width: 0.75rem;
+  margin-right: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #161616FF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3E4141;
+  border-radius: 1rem;
+}
+
+html.background-1 {
+  background: url(./Assets/Background1_Desktop.png) no-repeat center center fixed, #3F3F3F;
+  background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html.background-2 {
+  background: url(./Assets/Background2_Desktop.png) no-repeat center center fixed, #3F3F3F;
+  background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html.background-3 {
+  background: url(./Assets/Background3_Desktop.png) no-repeat center center fixed, #3F3F3F;
+  background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html.background-4 {
+  background: url(./Assets/Background4_Desktop.png) no-repeat center center fixed, #3F3F3F;
+  background-blend-mode: multiply;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+  html.background-1 {
+    background: url(./Assets/Background1_Mobile.png) no-repeat center center fixed, #3F3F3F;
+    background-blend-mode: multiply;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  html.background-2 {
+    background: url(./Assets/Background2_Mobile.png) no-repeat center center fixed, #3F3F3F;
+    background-blend-mode: multiply;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  html.background-3 {
+    background: url(./Assets/Background3_Mobile.png) no-repeat center center fixed, #3F3F3F;
+    background-blend-mode: multiply;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  html.background-4 {
+    background: url(./Assets/Background4_Mobile.png) no-repeat center center fixed, #3F3F3F;
+    background-blend-mode: multiply;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: transparent;
+}
+
+#root {
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently */
+  color: inherit;
+}
+
+.no-select:hover {
+  color: inherit;
+}

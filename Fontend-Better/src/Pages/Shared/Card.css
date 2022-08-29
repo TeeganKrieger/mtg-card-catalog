@@ -1,0 +1,109 @@
+.flex-card {
+    flex: 0 0 auto;
+    width: 50%;
+    height: fit-content;
+}
+
+@media screen and (min-width: 768px) {
+    .flex-card {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .flex-card {
+        flex: 0 0 auto;
+        width: 16.666666667%;
+    }
+}
+
+.card-one-sided {
+    position: relative;
+    display: block;
+    border: transparent 0.5rem solid;
+}
+
+.card-two-sided {
+    position: relative;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card-one-sided:hover {
+    border: #00D7EA 0.5rem solid;
+    border-radius: 1.25rem;
+}
+
+.one-side {
+    position: relative;
+    width: 100%;
+    border: none;
+}
+
+.front-side {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border: none;
+}
+
+.back-side {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border: none;
+    transform: rotateY(180deg);
+}
+
+.flip-icon {
+    position: absolute;
+    right: 0%;
+    width: 2rem;
+    height: 2rem;
+    background: url(../../Assets/Rotate.png) no-repeat scroll 0px 0px/100%, transparent;
+    z-index: 5;
+    transform: none;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-col-margins {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-context-menu {
+    display: none;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: calc(100%);
+    height: calc(100%);
+    background-color: #55555588;
+    border-radius: 1rem;
+    justify-content: center;
+}
+
+.show-context-menu .card-context-menu {
+    display: block;
+}
+
+.card-context-menu button {
+    display: block;
+    height: 40%;
+    aspect-ratio: 1/1;
+    margin: auto;
+    margin-top: 40%;
+    border: none;
+}
+
+.card-context-menu button.remove-from-collection {
+    background: url(../../Assets/RemoveFromCollection.png) no-repeat center center/100%;
+}

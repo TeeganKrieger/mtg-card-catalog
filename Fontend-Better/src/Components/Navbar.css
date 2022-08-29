@@ -1,0 +1,140 @@
+.navbar {
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(75, 88, 96, 0.6951155462184874) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(75, 88, 96, 0.6951155462184874) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(75, 88, 96, 0.6951155462184874) 100%);
+    border-bottom: #a9a9a9aa 2px solid;
+    overflow: hidden;
+    justify-content: center;
+    padding: 0px;
+}
+
+.nav-link {
+    display: block;
+    color: #a9a9a9;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-bottom: transparent 3px solid;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 4px;
+    border-bottom: #FFA725 3px solid;
+    transition: border-bottom 0.25s;
+}
+
+.nav-active {
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 4px;
+    border-bottom: #FFA725 3px solid;
+}
+
+.nav-burger {
+    display: none;
+    max-width: 3rem;
+    max-height: 3rem;
+    transition: transform 0.5s;
+}
+
+.nav-burger img {
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+.nav-search {
+    height: min-content;
+    width: fit-content;
+    margin-left: 3rem;
+}
+
+.nav-search-input {
+    display: inline-block;
+    vertical-align: top;
+    background: url(../Assets/Search.png) no-repeat scroll 0.33rem 0.5rem/1.5rem, white;
+    padding: 0px;
+    padding-left: 2.5rem;
+    font-size: 1rem;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.nav-search-link {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    height: 2.5rem;
+    padding-top: 0.5rem;
+    text-decoration: none;
+    color: #f1fffa;
+    background-color: #D00000;
+    width: 4rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.nav-advanced-link {
+    display: inline-block;
+    vertical-align: top;
+    background: url(../Assets/Gear.png) no-repeat scroll 50% 50%/80%;
+    margin-left: 0.2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    text-decoration: none;
+}
+
+.nav-advanced-link:hover {
+    transform: rotate(360deg);
+    transition: transform 4s linear;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        justify-content: right;
+        display: flex;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+    .navbar .nav-burger {
+        float: right;
+        display: block;
+    }
+
+    .nav-search {
+        float: left;
+        height: min-content;
+        width: fit-content;
+        margin-left: 0rem;
+    }
+
+    .nav-search-input {
+        width: calc(100vw - 7rem);
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+
+    .nav-search-link {
+        display: none;
+    }
+
+    .navbar.nav-responsive .nav-link {
+        display: block;
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar.nav-responsive .nav-burger {
+        order: 0;
+        transform: rotate(90deg);
+        transition: transform 0.5s;
+    }
+
+}
