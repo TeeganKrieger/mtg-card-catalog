@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './Components/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home';
-import Collection from './Pages/Collection/Collection';
+import {Collection} from './Pages/Collection/Collection';
 import SearchResults from './Pages/SearchResults/SearchResults';
 import { initializeLoginHelper, performCookieLogin } from './Scripts/LoginHelper';
 

@@ -5,9 +5,9 @@ import { GenerateDefaultSearchBody, IsEmptySearchBody } from '../../Scripts/Sear
 import axios from 'axios';
 import { SessionContext } from '../../App';
 
-const DeckContext = React.createContext();
+const DeckContext = React.createContext(null);
 
-export default function Collection() {
+function Collection() {
 
     const sessionContext = useContext(SessionContext);
 
@@ -17,6 +17,8 @@ export default function Collection() {
     let searchBody = useRef(GenerateDefaultSearchBody());
     let [collection, setCollection] = useState([]);
     let [searchMode, setSearchMode] = useState(true);
+
+    let []
 
     let searchState = { searchBody, searchMode, setSearchMode, setCollection, setPageNumber, setPageCount };
 
@@ -136,3 +138,5 @@ async function performSearch(searchState) {
 
     });
 }
+
+export {Collection, DeckContext};
